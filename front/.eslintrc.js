@@ -11,6 +11,7 @@ module.exports = {
     react: {
       version: 'detect',
     },
+    'import/resolver': 'webpack',
   },
   extends: [
     'plugin:react/recommended',

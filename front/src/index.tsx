@@ -1,7 +1,4 @@
-import React from 'react'
 import ReactDOM from 'react-dom'
+import App from '@/app'
 
-ReactDOM.render(
-  <div>Init page of Board Game Translator</div>,
-  document.getElementById('app')
-)
+ReactDOM.render(<App />, document.getElementById('app'))
