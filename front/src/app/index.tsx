@@ -2,10 +2,10 @@ import loadable from '@loadable/component'
 import {
   BrowserRouter as Router,
   Switch,
-  Link,
   Route,
   Redirect,
 } from 'react-router-dom'
+import Menu from '@/features/menu'
 
 const Games = loadable(() => import('@/pages/games'))
 
@@ -21,11 +21,7 @@ function App() {
   return (
     <Router>
       <div>
-        <ul>
-          <li>
-            <Link to="/games">Games</Link>
-          </li>
-        </ul>
+        <Menu />
 
         <Switch>
           {routes.map((route, i) => (
