@@ -6,6 +6,7 @@ import {
   Redirect,
 } from 'react-router-dom'
 import Menu from '@/features/menu'
+import './style.css'
 
 const Games = loadable(() => import('@/pages/games'))
 
